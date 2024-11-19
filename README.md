@@ -8,3 +8,11 @@
 
 
 # Dependencies
+
+This project currently runs on the following versions of Python and libraries:
+
+- **Python**: 3.11.9
+- **NumPy**: 1.26.4
+- **Pandas**: 2.2.2
+- **PyTorch**: 2.2.0+cu121
+- **Matplotlib**: 3.9.2
