@@ -21,8 +21,8 @@ This project currently runs on the following versions of Python and libraries:
 # How to Run The Simulation
 
 - Pip Install powfacpy
-- Find the `dyn_sim_interface.py` file
-- Add this additional code in the given text file:
+- Find the `dyn_sim_interface.py` file after install powfacpy.
+- Add this additional code in in the above mentioned python file:
 
 ```python
 def initialize_opc(self, param=None):
@@ -35,5 +35,6 @@ def initialize_opc(self, param=None):
         self.set_attr(comopc, param)
     comopc.Execute()
 
+```
 
     
