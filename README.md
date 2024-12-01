@@ -16,3 +16,22 @@ This project currently runs on the following versions of Python and libraries:
 - **Pandas**: 2.2.2
 - **PyTorch**: 2.2.0+cu121
 - **Matplotlib**: 3.9.2
+- **Powpfacpy
+
+- # How to Run The Simulation
+
+  - Pip Install powfacpy
+  - Find the dyn_sim_interface.py
+  - Add this additional code in the given text file.
+    ```python
+def initialize_opc(self, param=None):
+    """
+    Initialize time domain simulation.
+    Parameters for 'ComInc' command object can be specified in 'param' dictionary.
+    """
+    comopc = self.app.GetFromStudyCase("ComOpc")
+    if param is not None:
+        self.set_attr(comopc, param)
+    comopc.Execute()
+    '''
+    
