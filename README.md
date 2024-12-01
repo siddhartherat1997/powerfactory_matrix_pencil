@@ -33,5 +33,5 @@ def initialize_opc(self, param=None):
     if param is not None:
         self.set_attr(comopc, param)
     comopc.Execute()
-    '''
+
     
