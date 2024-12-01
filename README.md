@@ -21,7 +21,7 @@ This project currently runs on the following versions of Python and libraries:
 # How to Run The Simulation
 
 - Pip Install powfacpy
-- Find the `dyn_sim_interface.py` file after install powfacpy.
+- Find the `dyn_sim_interface.py` file after installing powfacpy.
 - Add this additional code in in the above mentioned python file:
 
 ```python
@@ -36,5 +36,7 @@ def initialize_opc(self, param=None):
     comopc.Execute()
 
 ```
-
+-Load the pfd file(exported Powerfactory Simulation file) in powerfactory before using the code, make sure to change the powerfactory pathn in the `main.py` file.
+-Pull/Download the respository.
+-Run the `dyn_sim_interface.py` file to start the simulation.
     
